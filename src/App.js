@@ -13,6 +13,7 @@ import {
 } from "react-instantsearch";
 import algoliasearch from "algoliasearch/lite";
 import { Hit as AlgoliaHit } from "instantsearch.js";
+import "instantsearch.css/themes/algolia.css";
 
 const client = algoliasearch("TV0WINJGZU", "ff9e9ae7119e5a8381082aa6fcc757d4");
 
@@ -47,10 +48,17 @@ function App() {
         </a>
       </header> */}
       <InstantSearch searchClient={client} indexName="pandabuy">
-        <SearchBox />
-        <RefinementList attribute="brand" />
-        <RefinementList attribute="price" />
-        <Hits hitComponent={Hit} />
+        <div className="Container">
+          <div>
+            <RefinementList attribute="brand" />
+            <RefinementList attribute="price" />
+          </div>
+          <div>
+            {" "}
+            <SearchBox />
+            <Hits hitComponent={Hit} />
+          </div>
+        </div>
       </InstantSearch>
     </div>
   );
