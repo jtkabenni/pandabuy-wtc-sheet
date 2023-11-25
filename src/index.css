@@ -36,3 +36,14 @@ ul {
 .ais-SearchBox-input {
   width: 50%;
 }
+
+.ais-Pagination {
+  padding-bottom: 40px;
+}
+img {
+  width: 100%;
+}
+
+input {
+  margin-bottom: 10px;
+}
