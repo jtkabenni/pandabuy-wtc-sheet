@@ -33,9 +33,6 @@ ul {
   box-shadow: 0 2px 5px 0px #e3e5ec;
   padding: 5px;
 }
-.ais-SearchBox-input {
-  width: 50%;
-}
 
 .ais-Pagination {
   padding-bottom: 40px;
@@ -44,6 +41,21 @@ img {
   width: 100%;
 }
 
-input {
+form {
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Container {
+    display: inherit;
+  }
+
+  .refinements,
+  .ais-Hits-item {
+    width: 100%;
+  }
+
+  li {
+    width: 100%;
+  }
 }
