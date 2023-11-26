@@ -21,7 +21,9 @@ function Hit({ hit }) {
         <Highlight attribute="name" hit={hit} />
       </h1>
       <p>{hit.price}</p>
-      <a href={hit.link}>CLICK TO COP</a>
+      <button>
+        <a href={hit.link}>CLICK TO COP</a>
+      </button>
     </article>
   );
 }
@@ -32,7 +34,9 @@ function App() {
         <div className="Container">
           <div className="refinements">
             <RefinementList attribute="brand" />
+
             <RefinementList attribute="name" />
+
             <RefinementList attribute="price" />
           </div>
           <div>
